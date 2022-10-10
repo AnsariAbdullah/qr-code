@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import QRCode from 'qrcode';
+import DwldBtn from './components/dwldBtn';
 
 {/* add debounce */ }
 
@@ -55,7 +56,11 @@ const App = () => {
 				// QR block
 				<div>
 					{qrLink !== '' ?
-						<img src={qrLink} /> : null
+						<>
+							<img src={qrLink} /> 
+							<DwldBtn link={qrLink} />
+						</>
+						: null
 					}
 					<button
 						className='cancel-btn'
