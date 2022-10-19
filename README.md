@@ -9,4 +9,3 @@ It also uses cypress as a testing library to test the application.
 
 - Run application: `yarn start` or `npm start`
 - Run cypress: `npx cypress open` or `yarn run cypress open`
-# qr-code
