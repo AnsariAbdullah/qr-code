@@ -1,0 +1,16 @@
+.dld-btn{
+	margin: 10px;
+	a{
+		width: 150px;
+		background: #4F46E5;
+		border: none;
+		color: #fff;
+		padding: 10px 20px;
+		border-radius: 5px;
+		font-size: 15px;
+		text-decoration: none;
+		&:hover{
+			background: #6366F1;
+		}
+	}
+}

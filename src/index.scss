@@ -1,20 +1,69 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
 }
 
 /* QR main CSS */
-.qr-controll-wrapper{
+.app {
 	width: 1024px;
+	height: calc(100vh - 300px);
+	;
 	margin: 0 auto;
 	text-align: center;
-	margin-top: 200px;
-}
 
-.cancel-btn{
-	border: none;
-	background: none;
-	text-decoration: none;
-	color: #b00020;
+	.card {
+		background: #fff;
+		border: 1px solid #fff;
+		border-radius: 12px;
+		box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+		max-width: 640px;
+		min-width: 415px;
+		opacity: .95;
+		padding: 35px;
+		margin: -35px auto;
+	}
+
+	.input-block {
+		input {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.primary-btn {
+		width: 150px;
+		background: #4F46E5;
+		border: none;
+		color: #fff;
+		padding: 10px 20px;
+		border-radius: 5px;
+		font-size: 15px;
+
+		&:hover {
+			background: #6366F1;
+		}
+	}
+
+	.cancel-btn {
+		border: none;
+		background: none;
+		text-decoration: none;
+		color: #b00020;
+		margin-top: 15px;
+	}
+
+	// responsive design
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+	}
+
+	@media only screen and (max-width: 425px) {
+		.card {
+			max-width: 90%;
+			min-width: 80%;
+		}
+	}
 }

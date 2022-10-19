@@ -1,4 +1,5 @@
 import React from 'react';
+import './dwldBtn.scss'
 
 const DwldBtn = ({ link }) => {
 	const download = () => {
@@ -17,7 +18,7 @@ const DwldBtn = ({ link }) => {
 				download
 				onClick={() => download}
 			>
-				Click here to download your QR
+				Download your QR
 			</a>
 		</div>
 	);
