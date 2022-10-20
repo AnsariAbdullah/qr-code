@@ -3,8 +3,6 @@ import QRCode from 'qrcode';
 import DwldBtn from './components/dwldBtn';
 import Heading from './components/heading';
 
-{/* add debounce */ }
-
 const App = () => {
 	const [enteredString, setEnteredString] = useState('')
 	const [qrLink, setQrLink] = useState('')
@@ -54,6 +52,7 @@ const App = () => {
 					<div className='input-block card'>
 						<input
 							type='text'
+							className='url-box'
 							placeholder='Enter the URL'
 							onChange={e => handleChange(e)}
 							ref={inputBox}
@@ -75,7 +74,7 @@ const App = () => {
 					<div className='qr-block-wrapper card'>
 						{qrLink !== '' ?
 							<>
-								<img src={qrLink} />
+								<img src={qrLink} alt="qr-code" />
 								<DwldBtn link={qrLink} />
 							</>
 							: null
