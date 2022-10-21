@@ -1,3 +1,5 @@
 - add share image option. Refer [package](https://www.npmjs.com/package/shareimage)
 - add es-lint. Refer [article](https://www.geeksforgeeks.org/how-to-configure-eslint-for-react-projects/)
 - add more functionalty or add validation for generating QR. Read [doc](https://github.com/soldair/node-qrcode)
+- fix the alert and show toast instead of browser alert. Change test case for this.
+- Convert to TypeScript.
