@@ -1,7 +1,11 @@
 import React from 'react';
 import './dwldBtn.scss'
 
-const DwldBtn = ({ link }) => {
+type DwldBtnProps = {
+	link: string
+}
+
+const DwldBtn = ({ link }: DwldBtnProps) => {
 	const download = () => {
 		let ele = document.createElement('a')
 		let file = new Blob(
@@ -21,7 +25,7 @@ const DwldBtn = ({ link }) => {
 				Download your QR
 			</a>
 		</div>
-	);
+	)
 }
 
 export default DwldBtn;
