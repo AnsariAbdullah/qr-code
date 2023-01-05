@@ -1,7 +1,12 @@
 import React from 'react';
 import './input.scss'
 
-const InptBx = ({ inputType, placeholderText }) => {
+type InptBxProps = {
+	inputType: string,
+	placeholderText: string
+}
+
+const InptBx = ({ inputType, placeholderText }: InptBxProps) => {
 	return (
 		<input
 			type={inputType}
